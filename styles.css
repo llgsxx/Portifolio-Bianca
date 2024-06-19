@@ -1,0 +1,824 @@
+/* Reset de estilos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    background-color: #171515;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+}
+
+/* Header */
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url('imagens/Foto-header.png');
+    background-position: right;
+    background-size:auto;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.nav {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    margin-right: 80px;
+}
+.nav a:hover {
+    color: #6279f1; 
+}
+
+.icon-social {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Header Text */
+.txt-header {
+    padding: 180px;
+    margin-top: 60px;
+    line-height: 1.5;
+}
+
+.txt-header h1 {
+    font-size: 77px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.txt-header span {
+    color: #6279F1;
+    font-size: 77px;
+    font-weight: 700;
+}
+
+.txt-header h2 {
+    background-color: #C4C4C4;
+    border-radius: 50px 0px 50px 0px;
+    text-align: center;
+    color: #171515;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.txt-header p {
+    color: #AAAAAA;
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 30px;
+    text-align: left;
+}
+
+/* Media query para telas menores que 600px */
+@media only screen and (max-width: 600px) {
+
+    header{ background-position: center;
+        background-size: auto;
+
+    }
+    .nav {
+        position: static;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .nav a {
+        display: block;
+        margin: 0;
+        margin-bottom: 10px;
+        
+    }
+
+    .txt-header {
+        padding: 20px;
+        text-align: center;
+    }
+    .icon-social {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 50px;
+        left: 220px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .txt-header h1 {
+        font-size: 40px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .txt-header span {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .txt-header h2 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .txt-header p {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+
+/* About Me Section */
+/* Estilos gerais */
+.about-me {
+    display: flex;
+    align-items: center;
+    padding: 200px;
+    gap: 250px;
+}
+
+.txt-sobre {
+    max-width: 40%;
+}
+
+.txt-sobre h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.txt-sobre span {
+    color: #6279F1;
+    font-weight: 700;
+}
+
+.txt-sobre h2 {
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.txt-sobre p {
+    font-size: 16px;
+    color: #AAAAAA;
+    margin-bottom: 20px;
+    max-width: 100%;
+    text-align: left;
+}
+
+/* Media query para telas menores que 600px */
+@media only screen and (max-width: 600px) {
+    .about-me {
+        flex-direction: column;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .txt-sobre {
+        max-width: 110%;
+    }
+
+    .txt-sobre h1 {
+        font-size: 32px;
+    }
+
+    .txt-sobre h2 {
+        font-size: 16px;
+    }
+
+    .img-about-me {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        width: 350px;
+        height: 400px; 
+    }
+    
+    .img-about-me img {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+/* Education Section */
+.education {
+    display: flex;
+    padding: 0 200px; 
+    background-image: url(imagens/Frame%202.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.education h1 {
+    font-size: 70px;
+    margin-bottom: 100px;
+    font-weight: 600;
+}
+
+.education h2 {
+    font-size: 24px;
+    color: #AAAAAA;
+    margin-bottom: 30px;
+}
+
+.education p {
+    font-size: 16px;
+    color: #B9B9B9;
+    margin-bottom: 20px;
+}
+
+.Analysis a {
+    text-decoration: none;
+    color: #6279F1;
+    font-size: 16px;
+}
+
+/* Media query para telas menores que 600px */
+@media only screen and (max-width: 600px) {
+    .education {
+        padding: 15px;
+        margin-left: 12px;
+        background-position: left;
+        flex-direction: column;
+    }
+
+    .education h1 {
+        font-size: 40px; 
+        margin-bottom: 30px; 
+    }
+
+    .education h2 {
+        font-size: 18px; 
+        margin-bottom: 15px; 
+    }
+}
+
+/* Fundamentals Section */
+.fundamentals {
+    text-align: left;
+    padding: 50px;
+    margin-left: 400px; 
+    margin-top: 150px; 
+    white-space: nowrap;
+}
+
+/* Media query para telas menores que 600px */
+@media only screen and (max-width: 600px) {
+    .fundamentals {
+        margin-left: 0; 
+        margin-top: 70px; 
+        padding: 10px; 
+    }
+}
+
+
+/* Languages Section */
+.languages {
+    text-align: left;
+    padding: 0px 200px 200px 200px;
+}
+
+.languages h1 {
+    font-size: 32px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.language {
+    display: inline-block;
+    text-align: left;
+    margin-right: 60px;
+}
+
+.language h2 {
+    font-size: 24px;
+    color: #AAAAAA;
+    margin-bottom: 5px;
+}
+
+.language h3 {
+    font-size: 16px;
+    color: #B9B9B9;
+    margin: 0; 
+}
+@media only screen and (max-width: 600px) {
+    .languages {
+        padding: 10px 20px;
+        margin-left: 15px; 
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+
+    .languages h1 {
+        font-size: 28px; 
+        margin-bottom: 30px; 
+    }
+
+    .language {
+        margin-right: 30px; 
+    }
+
+    .language h2 {
+        font-size: 22px; 
+    }
+
+    .language h3 {
+        font-size: 14px; 
+    }
+}
+
+/* Profile Section */
+/* Perfil */
+.profile {
+    display: flex;
+    background-image: url(imagens/Frame%20512880.png); 
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 200px; 
+}
+
+.profile-content {
+    flex: 1; 
+}
+
+.profile h1 {
+    color: #FFFFFF;
+    font-size: 32px;
+    margin-bottom: 30px; 
+}
+
+.profile h2 {
+    color: #AAAAAA;
+    font-size: 24px;
+    font-weight: 200;
+    margin-bottom: 40px; 
+    text-align: justify;
+}
+
+.profile h3 {
+    color: #AAAAAA;
+    font-weight: 200;
+    margin-bottom: 20px; 
+}
+
+.profile a {
+    text-decoration: none;
+    color: #6279F1;
+}
+
+@media only screen and (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+        background-position: center; 
+        padding: 30px; 
+    }
+
+    .profile h1 {
+        font-size: 24px; 
+        margin-bottom: 20px; 
+    }
+
+    .profile h2 {
+        font-size: 18px; 
+        margin-bottom: 40px; 
+    }
+}
+
+/* Container */
+.container {
+    max-width: 100%;
+    text-align: left;
+    margin: 0;
+    padding-left: 400px;
+    margin-bottom: px;
+}
+.container h1 {
+    color: #AAAAAA;
+    font-size: 24px;
+    font-weight: 300px;
+}
+
+.titulo-skills {
+    margin-top: 50px;
+    font-size: 24px;
+    color: #AAAAAA;
+}
+
+/* Tabelas */
+.table {
+    width: 100%;
+    margin-top: 30px; 
+    
+}
+
+.table .row {
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+}
+
+.table .cell {
+    flex: 1; 
+    text-align: center; 
+    
+}
+
+.table h2 {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0 5px; 
+    color: #FFFFFF;
+    border-radius: 5px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.tools .table .row .cell h2 {
+    border: 2px solid #45349D; 
+    background-color: #45349D; 
+}
+.skills .table .row .cell h2 {
+    border: 2px solid #6279F1; 
+    background-color: #6279F1; 
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding-left: 10px; 
+        padding-right: 10px; 
+        margin-top: 60px;
+    }
+
+    .table .row {
+        flex-wrap: wrap; 
+    }
+
+    .table .cell {
+        flex: 1; 
+        margin-bottom: 10px; 
+    }
+
+    .table h2 {
+        font-size: 16px;
+        margin-bottom: 5px; 
+    }
+
+}
+
+/*experience*/
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #445099 70%, #171515 50%);
+    margin-top: 100px;
+    padding: 100px 200px;
+    margin-bottom: 100px;
+}
+
+
+.titulo {
+    font-size: 48px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 40px;
+    position: relative; 
+}
+
+.titulo img {
+    position: absolute;
+    top: 10px; 
+    left: 105%; 
+    transform: translateX(-50%); 
+}
+
+.experience p {
+    font-size: 24px;
+    color: #AAAAAA;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 80px;
+    
+}
+@media only screen and (max-width: 600px) {
+    .experience {
+        padding: 80px 20px; 
+    }
+
+    .titulo {
+        font-size: 36px; 
+        text-align: center; 
+        margin-bottom: 20px;
+    }
+
+    .titulo img {
+        position: static; 
+        margin-left: 100px;
+    }
+    .experience p {
+        font-size: 18px; 
+        margin-bottom: 70px; 
+    }
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    
+}
+
+.box {
+    flex: 1;
+    padding: 40px 80px; 
+    background-color: #FFFFFF;
+
+
+}
+.box:hover {
+    background-color: white; 
+    transform: translateY(-5px); 
+    box-shadow: 0px 5px 10px rgba(231, 231, 231, 0.336);
+}
+.box h1 {
+    font-size: 24px;
+    color: #484848;
+    font-weight: 700;
+    margin-bottom: 10px; 
+}
+
+.box h2 {
+    font-size: 16px;
+    color: #666666;
+    font-weight: 600;
+    margin-bottom: 5px; 
+}
+
+.box h3 {
+    font-size: 16px;
+    color: #666666;
+    font-weight: 400;
+    margin-bottom: 15px; 
+}
+
+.box p {
+    font-size: 16px;
+    color: #666666;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.box a {
+    color: #5271FF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.imagem-form {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 15vh;
+    padding-right: 500px;
+}
+
+.imagem-form img {
+    max-width: 100%;        
+    height: auto;           
+}
+.formulario {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #2F2F2F;
+    width: 28%; 
+    margin: 0 auto; 
+    box-shadow: #6279f1 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.titulo-form {
+    color: #6279F1;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: left;
+    padding: 25px 0;
+
+}
+.formulario p {
+    font-size: 16px;
+    color: #AAAAAA;
+    font-weight: 200;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    background-color: #181818; 
+}
+
+.formulario textarea {
+    resize: none;
+    min-height: 60px; 
+    margin-bottom: 50px;
+}
+
+.formulario .btn-enviar {
+    text-align: right;
+    margin-top: -40px; 
+}
+
+.formulario .btn-enviar input[type="submit"] {
+    width: 160px;
+    padding: 15 50px;
+    border-radius: 10px;
+    background-color: #6279F1;
+    color: #F2F2F2;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.formulario .btn-dowload a {
+    text-align: left;
+    width: 120px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background-color: #E50072;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 20px;
+    outline: none;
+}
+
+.contato {
+    display: flex;
+    font-size: 16px;
+    color: #FFFFFF;
+    gap: 10px;
+    white-space: nowrap;
+    margin-top: 20px;
+    text-align: center;
+}
+@media only screen and (max-width: 768px) {
+    .formulario {
+        width: 90%; 
+        padding: 20px; 
+    }
+
+    .titulo-form {
+        font-size: 28px; 
+        text-align: center; 
+    }
+
+    .formulario .btn-enviar {
+        text-align: center; 
+        width: 145px;
+    }
+    
+    .formulario .btn-enviar input[type="submit"] {
+        width: 100%; 
+        padding: 15px;
+        margin-top: 1px;
+        margin-left: 170px;
+    }
+    
+    .formulario .btn-dowload a {
+        width: 50%; 
+        padding: 14px 20px; 
+        margin-top: 20px; 
+    }
+    
+    .contato {
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 5px; 
+    }
+    .imagem-form {
+        padding-right: 0; 
+        text-align: right;
+        padding-right: 200px;
+    }
+}
+.footer-pf {
+
+    justify-content: center; 
+    background-image: url('imagens/bg.png');
+    background-repeat: no-repeat;
+    background-position:right;
+    background-color: #445099;
+}
+.footer-pf h1{
+    padding-top: 100px;
+    margin-top: 100px;
+    font-size: 64px;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+.footer-pf h2{
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    font-weight: 200;
+    margin-left: 100px;
+}
+.footer-pf h3 {
+    font-size: 24px;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+
+.icon-footer {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    text-align: end;
+    margin-top: 200px;
+    margin-left: 100px;
+
+
+}
+
+.footer-pf p {
+    text-align: right;
+    margin-right: 100px;
+    padding-bottom: 50px;
+    font-weight: 200;
+}
+
+@media (max-width: 768px) {
+    .footer-pf {
+        justify-content: center;
+        background-position: center;
+        text-align: center;
+    }
+    .footer-pf h1 {
+        font-size: 28px;
+        padding-top: 40px;
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    .footer-pf h2, .footer-pf h3 {
+        font-size: 14px;
+        margin-left: 10px;
+        text-align: left;
+    }
+    .icon-footer {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        text-align: end;
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+    .footer-pf p {
+        text-align: center;
+        margin-right: 10px;
+        padding-bottom: 20px;
+    }
+}
