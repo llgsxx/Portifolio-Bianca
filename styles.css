@@ -731,7 +731,8 @@ header {
     .contato {
         flex-wrap: wrap; 
         justify-content: center; 
-        gap: 5px; 
+        gap: 5px;
+        text-decoration: none; 
     }
     .imagem-form {
         padding-right: 0; 
